@@ -40,7 +40,8 @@ def create_task():
     tasks.append(new_task)
 
     return jsonify({
-        "message": "Tarefa criada com sucesso"
+        "message": "Tarefa criada com sucesso",
+        "id": new_task.get_id()
     })
 
 
